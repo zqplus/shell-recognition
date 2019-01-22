@@ -36,8 +36,8 @@ for i = 1:numel(shell_stats)
     %figure, imshow(shell_single);
     sub_size=find(shell_single ==1);
     [sub_size_x, sub_size_y]=size(sub_size);
-    if sub_size_x > 200  %%% find the segment shell object 
-        maskedRgbImage = bsxfun(@times, RGB, cast(shell_single, 'like', RGB)); %%% obtain the color shell object 
+    if sub_size_x > 200  %%% find the segment shell object %%%
+        maskedRgbImage = bsxfun(@times, RGB, cast(shell_single, 'like', RGB)); %%% obtain the color shell object %%%
         %figure, imshow(maskedRgbImage);
         %shell_single_used=shell_single;
     end
